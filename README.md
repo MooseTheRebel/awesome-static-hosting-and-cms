@@ -39,6 +39,7 @@ We don't want to repeat that content, _go read the original!_
 - **Netlify** : (web: [netlify.com](https://www.netlify.com))
 - **DOM Cloud** : (web: [domcloud.id](https://domcloud.id/en/))
 - **Azure Static Web Apps** : (web: [azure.microsoft.com](https://azure.microsoft.com/services/app-service/static/))
+- **Catalyst Slate** : (web: [catalyst.zoho.com](https://catalyst.zoho.com/slate/))
 
 ## Commercial hosting
 - **Aerobatic** : (web: [aerobatic.com](http://www.aerobatic.com))
