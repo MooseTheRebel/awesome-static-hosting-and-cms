@@ -39,6 +39,7 @@ We don't want to repeat that content, _go read the original!_
 - **Netlify** : (web: [netlify.com](https://www.netlify.com))
 - **DOM Cloud** : (web: [domcloud.id](https://domcloud.id/en/))
 - **Azure Static Web Apps** : (web: [azure.microsoft.com](https://azure.microsoft.com/services/app-service/static/))
+- **OneClickLive** : (web: [oneclicklive.app](https://oneclicklive.app)) — Paste HTML/JSX and get a live HTTPS URL in 3 seconds. No account required for first deploy. Auto-wraps React without a build step.
 
 ## Commercial hosting
 - **Aerobatic** : (web: [aerobatic.com](http://www.aerobatic.com))
