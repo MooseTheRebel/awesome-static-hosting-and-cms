@@ -38,6 +38,7 @@ We don't want to repeat that content, _go read the original!_
 - **Neocities** : (web: [neocities.org](https://neocities.org))
 - **Netlify** : (web: [netlify.com](https://www.netlify.com))
 - **DOM Cloud** : (web: [domcloud.id](https://domcloud.id/en/))
+- **FreeKit** : (web: [freekit.dev](https://freekit.dev)) - Free instant HTML hosting API. Upload HTML and get a public URL, no signup required.
 - **Azure Static Web Apps** : (web: [azure.microsoft.com](https://azure.microsoft.com/services/app-service/static/))
 
 ## Commercial hosting
