@@ -1,0 +1,65 @@
+name: PR Preview Build
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install dependencies
+        run: uv sync
+        working-directory: github_site
+
+      - name: Build directory data
+        run: uv run python app.py build_directory
+        working-directory: github_site
+        env:
+          SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY || 'ci-insecure-key-not-for-production' }}
+          DEBUG: "False"
+          ALLOWED_HOSTS: "localhost"
+          COLTRANE_SITE_URL: "http://localhost"
+          COLTRANE_TITLE: "Awesome Static Hosting and CMS"
+
+      - name: Build static site
+        run: uv run coltrane record
+        working-directory: github_site
+        env:
+          SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY || 'ci-insecure-key-not-for-production' }}
+          DEBUG: "False"
+          ALLOWED_HOSTS: "localhost"
+          COLTRANE_SITE_URL: "http://localhost"
+          COLTRANE_TITLE: "Awesome Static Hosting and CMS"
+
+      - name: Zip generated site
+        run: zip -r ../github-site-preview.zip output/
+        working-directory: github_site
+
+      - name: Upload site preview
+        uses: actions/upload-artifact@v4
+        id: upload
+        with:
+          name: github-site-preview
+          path: github-site-preview.zip
+          retention-days: 3
+
+      - name: Post PR comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Download the zip to view the proposed 'github_site': ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}`
+            })

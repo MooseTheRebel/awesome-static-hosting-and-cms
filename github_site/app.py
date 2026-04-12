@@ -11,6 +11,7 @@ application = coltrane.initialize(
     ALLOWED_HOSTS=os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1").split(","),
     COLTRANE_SITE_URL=os.environ.get("COLTRANE_SITE_URL", "http://localhost:8000"),
     COLTRANE_TITLE=os.environ.get("COLTRANE_TITLE", "Awesome Static Hosting and CMS"),
+    INSTALLED_APPS=["directory"],
 )
 
 if __name__ == "__main__":
