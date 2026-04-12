@@ -4,9 +4,9 @@ A curated directory of static hosting providers, content management systems, and
 
 ## Browse the directory
 
-- [Hosting Providers](/hosting-providers) — static hosting services, free and commercial
-- [Content Management Systems](/cms) — CMS tools compatible with static site generators
-- [Blog](/blog) — curated articles and posts
+- [Hosting Providers](hosting-providers) — static hosting services, free and commercial
+- [Content Management Systems](cms) — CMS tools compatible with static site generators
+- [Blog](blog) — curated articles and posts
 
 ## About
 
