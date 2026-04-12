@@ -38,7 +38,7 @@ jobs:
           SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
           DEBUG: "False"
           ALLOWED_HOSTS: "moosetherebel.github.io"
-          COLTRANE_SITE_URL: "https://moosetherebel.github.io/awesome-static-hosting-and-cms"
+          COLTRANE_SITE_URL: "https://moosetherebel.github.io/awesome-static-hosting-and-cms/"
           COLTRANE_TITLE: "Awesome Static Hosting and CMS"
 
       - name: Build static site
@@ -48,7 +48,7 @@ jobs:
           SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
           DEBUG: "False"
           ALLOWED_HOSTS: "moosetherebel.github.io"
-          COLTRANE_SITE_URL: "https://moosetherebel.github.io/awesome-static-hosting-and-cms"
+          COLTRANE_SITE_URL: "https://moosetherebel.github.io/awesome-static-hosting-and-cms/"
           COLTRANE_TITLE: "Awesome Static Hosting and CMS"
 
       - name: Upload Pages artifact
