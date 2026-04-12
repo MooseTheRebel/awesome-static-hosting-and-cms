@@ -1,0 +1,38 @@
+{% extends "coltrane/base.html" %}
+
+{% block content %}
+<h1>Static Hosting Providers</h1>
+<p>A curated directory of static site hosting providers.
+   Each entry links to a GitHub issue in this repository for community discussion.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Tags</th>
+      <th>Discussion</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for provider in data.hosting_providers.providers %}
+    <tr>
+      <td><a href="{{ provider.url }}" rel="noopener noreferrer">{{ provider.name }}</a></td>
+      <td>{{ provider.description }}</td>
+      <td>
+        {% for tag in provider.tags %}
+          <code>{{ tag }}</code>{% if not forloop.last %} {% endif %}
+        {% endfor %}
+      </td>
+      <td>
+        {% if provider.issue %}
+          <a href="{{ provider.issue }}" rel="noopener noreferrer">Discuss</a>
+        {% else %}
+          &mdash;
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock content %}
