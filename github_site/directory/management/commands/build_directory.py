@@ -38,8 +38,8 @@ class Command(BaseCommand):
 
     def _convert(self, toml_path: Path, json_path: Path) -> None:
         if not toml_path.exists():
-            self.stderr.write(self.style.ERROR(f"Not found: {toml_path}"))
-            return
+            from django.core.management.base import CommandError
+            raise CommandError(f"Source TOML file not found: {toml_path}")
 
         with toml_path.open("rb") as f:
             data = tomllib.load(f)
