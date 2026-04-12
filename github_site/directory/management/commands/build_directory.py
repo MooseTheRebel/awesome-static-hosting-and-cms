@@ -44,5 +44,5 @@ class Command(BaseCommand):
         with toml_path.open("rb") as f:
             data = tomllib.load(f)
 
-        json_path.write_text(json.dumps(data, indent=2))
+        json_path.write_text(json.dumps(data, indent=2) + "\n")
         self.stdout.write(self.style.SUCCESS(f"Wrote {json_path.relative_to(Path(settings.BASE_DIR).resolve())}"))
