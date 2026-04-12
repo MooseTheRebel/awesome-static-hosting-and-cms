@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 *.pyo
 output/
+output.json # coltrane's build manifest
 *.egg-info/
 dist/
 .DS_Store

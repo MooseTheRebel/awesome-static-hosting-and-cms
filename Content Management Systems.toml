@@ -1,0 +1,94 @@
+# Awesome Static Hosting - Content Management Systems Directory
+#
+# Each [[systems]] entry represents a CMS compatible with static site generators.
+# Fields:
+#   name        - Display name of the CMS
+#   source_url  - URL to the source code repository (empty string if closed-source)
+#   description - Short description of the CMS
+#   tags        - List of tags (e.g. "python", "ruby", "go", "javascript",
+#                 "blogging", "headless", "git-based", "open-source", "hosted")
+#   issue       - URL to the GitHub issue in this repo for discussion
+
+[[systems]]
+name = "Contentful"
+source_url = ""
+description = "Enterprise-grade headless CMS with a rich content editor and a powerful API for any platform."
+tags = ["javascript", "headless", "hosted", "api-based"]
+issue = ""
+
+[[systems]]
+name = "DatoCMS"
+source_url = "https://github.com/datocms"
+description = "Headless CMS for static site generators with a GraphQL API and media management."
+tags = ["javascript", "headless", "hosted", "api-based"]
+issue = ""
+
+[[systems]]
+name = "Forestry"
+source_url = ""
+description = "Git-based CMS for Jekyll and Hugo sites. Host anywhere and access your CMS from /admin/."
+tags = ["git-based", "blogging", "hosted"]
+issue = ""
+
+[[systems]]
+name = "Grav"
+source_url = "https://github.com/getgrav/grav"
+description = "Modern, fast flat-file CMS built on PHP. No database required."
+tags = ["php", "flat-file", "open-source", "blogging"]
+issue = ""
+
+[[systems]]
+name = "Hokus CMS"
+source_url = "https://github.com/julientregoat/hokus"
+description = "Open source desktop CMS for Hugo static websites."
+tags = ["javascript", "hugo", "open-source", "blogging"]
+issue = ""
+
+[[systems]]
+name = "Hygraph"
+source_url = "https://github.com/hygraph"
+description = "Headless CMS for digital creators with GraphQL content APIs."
+tags = ["javascript", "headless", "hosted", "api-based", "graphql"]
+issue = ""
+
+[[systems]]
+name = "Jekyll Admin"
+source_url = "https://github.com/jekyll/jekyll-admin"
+description = "A Jekyll plugin providing a traditional CMS-style graphical interface to author content."
+tags = ["ruby", "blogging", "open-source", "git-based"]
+issue = ""
+
+[[systems]]
+name = "Netlify CMS"
+source_url = "https://github.com/netlify/netlify-cms"
+description = "Open source git-based CMS for static site generators. Works with any static site generator."
+tags = ["javascript", "git-based", "open-source", "blogging"]
+issue = ""
+
+[[systems]]
+name = "Prose"
+source_url = "https://github.com/prose/prose"
+description = "Open source content editor for GitHub Pages. Simple interface for editing Markdown content."
+tags = ["javascript", "blogging", "open-source", "git-based"]
+issue = ""
+
+[[systems]]
+name = "Sanity.io"
+source_url = ""
+description = "Structured content platform with a React-based editing environment and a real-time content API."
+tags = ["javascript", "headless", "hosted", "api-based", "react"]
+issue = ""
+
+[[systems]]
+name = "Siteleaf"
+source_url = ""
+description = "Online content manager for Jekyll sites. Publish anywhere including GitHub Pages."
+tags = ["ruby", "blogging", "hosted", "git-based"]
+issue = ""
+
+[[systems]]
+name = "Surreal CMS"
+source_url = ""
+description = "Hosted CMS for static sites over FTP or Amazon S3. Edit HTML pages in-browser."
+tags = ["hosted", "blogging"]
+issue = ""

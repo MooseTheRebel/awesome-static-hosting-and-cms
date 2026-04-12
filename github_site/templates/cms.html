@@ -1,0 +1,46 @@
+{% extends "coltrane/base.html" %}
+
+{% block content %}
+<h1>Content Management Systems</h1>
+<p>A curated directory of content management systems compatible with static site generators.
+   Each entry links to a GitHub issue in this repository for community discussion.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Source</th>
+      <th>Description</th>
+      <th>Tags</th>
+      <th>Discussion</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for system in data.content_management_systems.systems %}
+    <tr>
+      <td>{{ system.name }}</td>
+      <td>
+        {% if system.source_url %}
+          <a href="{{ system.source_url }}" rel="noopener noreferrer">Source</a>
+        {% else %}
+          &mdash;
+        {% endif %}
+      </td>
+      <td>{{ system.description }}</td>
+      <td>
+        {% for tag in system.tags %}
+          <code>{{ tag }}</code>{% if not forloop.last %} {% endif %}
+        {% endfor %}
+      </td>
+      <td>
+        {% if system.issue %}
+          <a href="{{ system.issue }}" rel="noopener noreferrer">Discuss</a>
+        {% else %}
+          &mdash;
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock content %}

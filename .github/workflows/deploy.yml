@@ -29,9 +29,21 @@ jobs:
 
       - name: Install dependencies
         run: uv sync
+        working-directory: github_site
+
+      - name: Build directory data
+        run: uv run python app.py build_directory
+        working-directory: github_site
+        env:
+          SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+          DEBUG: "False"
+          ALLOWED_HOSTS: "moosetherebel.github.io"
+          COLTRANE_SITE_URL: "https://moosetherebel.github.io/awesome-static-hosting-and-cms"
+          COLTRANE_TITLE: "Awesome Static Hosting and CMS"
 
       - name: Build static site
         run: uv run coltrane record
+        working-directory: github_site
         env:
           SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
           DEBUG: "False"
@@ -42,7 +54,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: output/
+          path: github_site/output/
 
       - name: Deploy to GitHub Pages
         id: deploy
