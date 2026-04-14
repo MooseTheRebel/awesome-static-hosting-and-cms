@@ -14,7 +14,7 @@ body:
     attributes:
       label: Justification
       description: |
-        Provide at least 1 of the following reasons:
+        Provide at least 1 reason, such as:
         - **Abandoned or deprecated** — link to evidence (shutdown announcement, archived repo, 2+ years of inactivity)
         - **Broken or non-existent** — the URL no longer works or the product is gone
         - **Duplicate** — this entry duplicates another listing in the directory (reference the duplicate)

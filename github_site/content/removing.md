@@ -17,7 +17,7 @@ Entries that are outdated, broken, or abandoned should be removed to keep the di
 
 ### Required justification
 
-Provide at least 1 of the following reasons:
+Provide at least 1 reason, such as:
 
 - **Abandoned or deprecated** — link to evidence (e.g., a shutdown announcement, archived repo, or no activity in 2+ years)
 - **Broken or non-existent** — the URL is broken or the product no longer exists
@@ -38,7 +38,7 @@ Provide at least 1 of the following reasons:
 
 ### Required justification
 
-Provide at least 1 of the following reasons:
+Provide at least 1 reason, such as:
 
 - **Abandoned or deprecated** — link to evidence (e.g., a shutdown announcement, archived repo, or no activity in 2+ years)
 - **Broken or non-existent** — the URL is broken or the product no longer exists

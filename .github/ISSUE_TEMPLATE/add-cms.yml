@@ -26,16 +26,18 @@ body:
   - type: textarea
     id: justification
     attributes:
-      label: Justification (3 bullets required)
+      label: Justification (4 bullets required)
       description: |
-        You must address all three points:
-        1. **Actively maintained** — link to a recent commit, release, or changelog
-        2. **Works with static site generators** — explain the integration
-        3. **Meaningfully different** — explain how this differs from existing entries
+        You must address all four points:
+        1. **Open source** — link to the source code (e.g., GitHub, GitLab, Forgejo, Codeberg, sourcehut)
+        2. **Actively maintained** — link to a recent commit, release, or changelog
+        3. **Works with static site generators** — explain the integration
+        4. **Meaningfully different** — explain how this differs from existing entries
       placeholder: |
-        1. Actively maintained: ...
-        2. Works with static site generators: ...
-        3. Meaningfully different from existing entries: ...
+        1. Open source: ...
+        2. Actively maintained: ...
+        3. Works with static site generators: ...
+        4. Meaningfully different from existing entries: ...
     validations:
       required: true
 

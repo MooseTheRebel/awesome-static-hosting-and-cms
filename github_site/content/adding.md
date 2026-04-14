@@ -53,13 +53,14 @@ Content Management Systems are listed at [/cms/](cms).
 5. If accepted, open a PR that adds the new entry to **`Content Management Systems.toml`** at the repo root
 6. Once the PR is merged, the issue is closed
 
-### Required justification (3 bullets)
+### Required justification (4 bullets)
 
-Your issue must address all three:
+Your issue must address all four:
 
-1. **Actively maintained** — link to a recent commit, release, or changelog showing the CMS is still active
-2. **Works with static site generators** — explain how the CMS integrates with or supports static site generators
-3. **Meaningfully different** — explain how this CMS differs from entries already in the directory
+1. **Open source** — the source code must be publicly available (e.g., on GitHub, GitLab, Forgejo, Codeberg, sourcehut, or similar)
+2. **Actively maintained** — link to a recent commit, release, or changelog showing the CMS is still active
+3. **Works with static site generators** — explain how the CMS integrates with or supports static site generators
+4. **Meaningfully different** — explain how this CMS differs from entries already in the directory
 
 ### TOML entry format
 
