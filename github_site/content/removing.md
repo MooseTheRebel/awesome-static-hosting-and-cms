@@ -15,13 +15,13 @@ Entries that are outdated, broken, or abandoned should be removed to keep the di
 5. If accepted, open a PR that removes the entry from **`Hosting Providers.toml`** at the repo root
 6. Once the PR is merged, the issue is closed
 
-### Required justification (3 bullets)
+### Required justification
 
-Your issue must provide at least 3 of the following reasons:
+Provide at least 1 of the following reasons:
 
-1. **Abandoned or deprecated** — link to evidence (e.g., a shutdown announcement, archived repo, or no activity in 2+ years)
-2. **Broken or non-existent** — the URL is broken or the product no longer exists
-3. **Duplicate** — the entry duplicates another listing already in the directory (reference the duplicate)
+- **Abandoned or deprecated** — link to evidence (e.g., a shutdown announcement, archived repo, or no activity in 2+ years)
+- **Broken or non-existent** — the URL is broken or the product no longer exists
+- **Duplicate** — the entry duplicates another listing already in the directory (reference the duplicate)
 
 ---
 
@@ -36,13 +36,13 @@ Your issue must provide at least 3 of the following reasons:
 5. If accepted, open a PR that removes the entry from **`Content Management Systems.toml`** at the repo root
 6. Once the PR is merged, the issue is closed
 
-### Required justification (3 bullets)
+### Required justification
 
-Your issue must provide at least 3 of the following reasons:
+Provide at least 1 of the following reasons:
 
-1. **Abandoned or deprecated** — link to evidence (e.g., a shutdown announcement, archived repo, or no activity in 2+ years)
-2. **Broken or non-existent** — the URL is broken or the product no longer exists
-3. **Duplicate** — the entry duplicates another listing already in the directory (reference the duplicate)
+- **Abandoned or deprecated** — link to evidence (e.g., a shutdown announcement, archived repo, or no activity in 2+ years)
+- **Broken or non-existent** — the URL is broken or the product no longer exists
+- **Duplicate** — the entry duplicates another listing already in the directory (reference the duplicate)
 
 ---
 
