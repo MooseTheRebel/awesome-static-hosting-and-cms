@@ -36,6 +36,8 @@ tags = ["free", "CDN", "git-based"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/NUMBER"
 ```
 
+The `issue` field must be set to the URL of the proposal issue opened in step 1. Do not leave it blank or use a placeholder — the PR that adds the entry should include the correct issue URL in this field.
+
 ---
 
 ## Adding a CMS
@@ -69,6 +71,8 @@ description = "One or two sentence description."
 tags = ["git-based", "open-source", "headless"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/NUMBER"
 ```
+
+The `issue` field must be set to the URL of the proposal issue opened in step 1. Do not leave it blank or use a placeholder — the PR that adds the entry should include the correct issue URL in this field.
 
 ---
 
