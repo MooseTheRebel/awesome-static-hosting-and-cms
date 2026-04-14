@@ -1,0 +1,47 @@
+name: "Add: Hosting Provider"
+description: Propose a new static hosting provider to add to ASHC
+labels: ["add: hosting-provider", "status: proposed"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name of the Hosting Provider
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description (1-2 sentences)
+      description: Describe the provider and what makes it suitable for static site hosting.
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification (3 bullets required)
+      description: |
+        You must address all three points:
+        1. **Actively maintained** — link to a recent commit, release, or changelog
+        2. **Supports static site hosting** — explain how the provider hosts static files
+        3. **Meaningfully different** — explain how this differs from existing entries
+      placeholder: |
+        1. Actively maintained: ...
+        2. Supports static hosting: ...
+        3. Meaningfully different from existing entries: ...
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Suggested tags (comma-separated)
+      placeholder: "free, CDN, git-based"

@@ -1,0 +1,26 @@
+name: "Remove: Hosting Provider"
+description: Propose removing a hosting provider from ASHC
+labels: ["remove: hosting-provider", "status: proposed"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name of the Hosting Provider to remove
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification (3 bullets required)
+      description: |
+        Provide at least 3 of the following reasons:
+        1. **Abandoned or deprecated** — link to evidence (shutdown announcement, archived repo, 2+ years of inactivity)
+        2. **Broken or non-existent** — the URL no longer works or the product is gone
+        3. **Duplicate** — this entry duplicates another listing in the directory (reference the duplicate)
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
