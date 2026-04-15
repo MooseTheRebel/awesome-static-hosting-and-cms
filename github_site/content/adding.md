@@ -21,7 +21,7 @@ Hosting providers are listed at [/hosting-providers/](hosting-providers).
 
 Your issue must address all three:
 
-1. **Actively maintained** — link to a recent commit, release, or changelog showing the provider is still active
+1. **Actively maintained** — link to a recent commit, release, changelog, blog, or official update showing the provider is still active
 2. **Supports static site hosting** — explain how the provider hosts static files or supports static site deployments
 3. **Meaningfully different** — explain how this provider differs from entries already in the directory
 

@@ -12,8 +12,10 @@ body:
   - type: input
     id: source_url
     attributes:
-      label: Source / Website URL
+      label: Source Code URL
       description: Link to the source repository.
+    validations:
+      required: true      
 
   - type: textarea
     id: description
