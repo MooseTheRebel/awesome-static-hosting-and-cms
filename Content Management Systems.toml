@@ -10,13 +10,6 @@
 #   issue       - URL to the GitHub issue in this repo for discussion
 
 [[systems]]
-name = "Contentful"
-source_url = ""
-description = "Enterprise-grade headless CMS with a rich content editor and a powerful API for any platform."
-tags = ["javascript", "headless", "hosted", "api-based"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/32"
-
-[[systems]]
 name = "DatoCMS"
 source_url = "https://github.com/datocms"
 description = "Headless CMS for static site generators with a GraphQL API and media management."
