@@ -52,8 +52,8 @@ tags = ["ruby", "blogging", "open-source", "git-based"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/38"
 
 [[systems]]
-name = "Netlify CMS"
-source_url = "https://github.com/netlify/netlify-cms"
+name = "Decap CMS"
+source_url = "https://github.com/decaporg/decap-cms"
 description = "Open source git-based CMS for static site generators. Works with any static site generator."
 tags = ["javascript", "git-based", "open-source", "blogging"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/39"
