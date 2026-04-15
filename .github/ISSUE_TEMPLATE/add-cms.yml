@@ -13,7 +13,7 @@ body:
     id: source_url
     attributes:
       label: Source / Website URL
-      description: Link to the source repository or official website. Leave blank if closed-source.
+      description: Link to the source repository.
 
   - type: textarea
     id: description

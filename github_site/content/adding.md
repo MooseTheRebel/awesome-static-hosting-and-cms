@@ -1,6 +1,6 @@
 # Adding to ASHC
 
-Proposals to add new entries are tracked as GitHub issues. Each proposal must include 3 justification bullets, go through a community vote, and — if accepted — be implemented via a pull request.
+Proposals to add new entries are tracked as GitHub issues. Each proposal must include the required justification bullets, go through a community vote, and — if accepted — be implemented via a pull request.
 
 ---
 
