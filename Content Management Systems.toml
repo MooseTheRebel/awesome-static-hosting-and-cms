@@ -3,7 +3,7 @@
 # Each [[systems]] entry represents a CMS compatible with static site generators.
 # Fields:
 #   name        - Display name of the CMS
-#   source_url  - URL to the source code repository (empty string if closed-source)
+#   source_url  - URL to the source code repository
 #   description - Short description of the CMS
 #   tags        - List of tags (e.g. "python", "ruby", "go", "javascript",
 #                 "blogging", "headless", "git-based", "open-source", "hosted")
