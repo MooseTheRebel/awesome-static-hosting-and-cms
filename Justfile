@@ -29,3 +29,11 @@ bootstrap:
         echo "Created github_site/.env from .env.example — update SECRET_KEY before deploying."
     fi
     just install
+
+# Sort `[[providers]]` and `[[systems]]` entries by name
+sort-toml:
+    python3 tools/sort_toml.py
+
+# Verify TOML entries are sorted (CI-friendly; exit 1 if not)
+check-toml:
+    python3 tools/sort_toml.py --check

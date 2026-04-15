@@ -10,6 +10,48 @@
 #   issue       - URL to the GitHub issue in this repo for discussion
 
 [[providers]]
+name = "Aerobatic"
+url = "https://www.aerobatic.com"
+description = "Commercial static site hosting with advanced routing, redirects, and plugin support."
+tags = ["private company", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/50"
+
+[[providers]]
+name = "AWS S3"
+url = "https://aws.amazon.com/s3/"
+description = "Object storage from Amazon Web Services widely used for static site hosting with CloudFront CDN."
+tags = ["public company", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/53"
+
+[[providers]]
+name = "Azure Static Web Apps"
+url = "https://azure.microsoft.com/en-us/products/app-service/static"
+description = "Free tier static hosting from Microsoft Azure with global CDN and GitHub Actions integration."
+tags = ["free", "public company", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/49"
+
+[[providers]]
+name = "BowTie"
+url = "https://bowtie.io"
+description = "Commercial static site hosting and build service for Jekyll and other static generators."
+tags = ["small tech", "private company", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/51"
+
+[[providers]]
+name = "Divshot"
+url = "https://divshot.com"
+description = "Commercial static web hosting with a focus on front-end workflows and CLI deployment."
+tags = ["private company", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/52"
+
+[[providers]]
+name = "DOM Cloud"
+url = "https://domcloud.co"
+description = "Free hosting platform supporting static sites and multiple server-side runtimes."
+tags = ["free", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/48"
+
+[[providers]]
 name = "GitHub Pages"
 url = "https://pages.github.com"
 description = "Free static site hosting directly from a GitHub repository. Supports custom domains and HTTPS."
@@ -36,45 +78,3 @@ url = "https://www.netlify.com"
 description = "Free tier static hosting with CDN, continuous deployment, form handling, and serverless functions."
 tags = ["free", "private company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/47"
-
-[[providers]]
-name = "DOM Cloud"
-url = "https://domcloud.co"
-description = "Free hosting platform supporting static sites and multiple server-side runtimes."
-tags = ["free", "global"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/48"
-
-[[providers]]
-name = "Azure Static Web Apps"
-url = "https://azure.microsoft.com/en-us/products/app-service/static"
-description = "Free tier static hosting from Microsoft Azure with global CDN and GitHub Actions integration."
-tags = ["free", "public company", "global"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/49"
-
-[[providers]]
-name = "Aerobatic"
-url = "https://www.aerobatic.com"
-description = "Commercial static site hosting with advanced routing, redirects, and plugin support."
-tags = ["private company", "global"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/50"
-
-[[providers]]
-name = "BowTie"
-url = "https://bowtie.io"
-description = "Commercial static site hosting and build service for Jekyll and other static generators."
-tags = ["small tech", "private company", "global"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/51"
-
-[[providers]]
-name = "Divshot"
-url = "https://divshot.com"
-description = "Commercial static web hosting with a focus on front-end workflows and CLI deployment."
-tags = ["private company", "global"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/52"
-
-[[providers]]
-name = "AWS S3"
-url = "https://aws.amazon.com/s3/"
-description = "Object storage from Amazon Web Services widely used for static site hosting with CloudFront CDN."
-tags = ["public company", "global"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/53"
