@@ -14,9 +14,9 @@ All changes to the directory go through a community review process: a proposal (
 
 ## What would you like to do?
 
-- [Adding to ASHC](adding) — propose a new hosting provider or CMS
-- [Removing from ASHC](removing) — propose removing an outdated or broken entry
+- [Adding to ASHC](../adding) — propose a new hosting provider or CMS
+- [Removing from ASHC](../removing) — propose removing an outdated or broken entry
 
 ---
 
-Have a question? Check the [FAQ](faq) first.
+Have a question? Check the [FAQ](../faq) first.
