@@ -73,13 +73,6 @@ tags = ["javascript", "blogging", "open-source", "git-based"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/40"
 
 [[systems]]
-name = "Sanity.io"
-source_url = ""
-description = "Structured content platform with a React-based editing environment and a real-time content API."
-tags = ["javascript", "headless", "hosted", "api-based", "react"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/41"
-
-[[systems]]
 name = "Siteleaf"
 source_url = ""
 description = "Online content manager for Jekyll sites. Publish anywhere including GitHub Pages."
