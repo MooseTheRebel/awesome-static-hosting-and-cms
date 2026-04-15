@@ -14,10 +14,10 @@ A: Anyone! All additions and removals are proposed through GitHub issues and rev
 ## Contributing
 
 **Q: How do I propose adding a new entry?**
-A: Open a GitHub issue using the appropriate issue template ("Add: Hosting Provider" or "Add: CMS"). You'll need to provide the required justification bullets. See the [Contributing](contributing) page for the full process.
+A: Open a GitHub issue using the appropriate issue template ("Add: Hosting Provider" or "Add: CMS"). You'll need to provide the required justification bullets. See the [Contributing](../contributing/) page for the full process.
 
 **Q: How do I report a broken link or an outdated entry?**
-A: Open a GitHub issue using the "Remove: Hosting Provider" or "Remove: CMS" template and provide evidence that the entry should be removed. See [Removing from ASHC](removing) for details.
+A: Open a GitHub issue using the "Remove: Hosting Provider" or "Remove: CMS" template and provide evidence that the entry should be removed. See [Removing from ASHC](../removing/) for details.
 
 **Q: What happens after I open an issue?**
 A: The community votes using 👍/👎 reactions over a 30-day window. A maintainer then marks the issue as accepted or rejected and updates the label accordingly.

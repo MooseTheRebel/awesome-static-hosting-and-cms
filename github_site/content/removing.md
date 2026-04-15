@@ -46,4 +46,4 @@ Provide at least 1 reason, such as:
 
 ---
 
-Back to [Contributing](contributing)
+Back to [Contributing](../contributing/)
