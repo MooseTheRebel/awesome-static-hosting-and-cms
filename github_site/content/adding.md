@@ -12,7 +12,7 @@ Hosting providers are listed at [Hosting Providers](hosting-providers).
 
 1. **Open an issue** using the **"Add: Hosting Provider"** template
 2. The issue is automatically labeled `add: hosting-provider` and `status: proposed`
-3. The community votes with 👍/👎 over a 7-day window
+3. The community votes with 👍/👎 over a 30-day window
 4. A maintainer updates the label to `status: accepted` or `status: rejected`
 5. If accepted, open a PR that adds the new entry to **`Hosting Providers.toml`** at the repo root
 6. Once the PR is merged, the issue is closed
@@ -48,7 +48,7 @@ Content Management Systems are listed at [Content Management Systems](cms).
 
 1. **Open an issue** using the **"Add: CMS"** template
 2. The issue is automatically labeled `add: cms` and `status: proposed`
-3. The community votes with 👍/👎 over a 7-day window
+3. The community votes with 👍/👎 over a 30-day window
 4. A maintainer updates the label to `status: accepted` or `status: rejected`
 5. If accepted, open a PR that adds the new entry to **`Content Management Systems.toml`** at the repo root
 6. Once the PR is merged, the issue is closed

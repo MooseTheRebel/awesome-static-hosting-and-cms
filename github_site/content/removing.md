@@ -10,7 +10,7 @@ Entries that are outdated, broken, or abandoned should be removed to keep the di
 
 1. **Open an issue** using the **"Remove: Hosting Provider"** template
 2. The issue is automatically labeled `remove: hosting-provider` and `status: proposed`
-3. The community votes with 👍/👎 over a 7-day window
+3. The community votes with 👍/👎 over a 30-day window
 4. A maintainer updates the label to `status: accepted` or `status: rejected`
 5. If accepted, open a PR that removes the entry from **`Hosting Providers.toml`** at the repo root
 6. Once the PR is merged, the issue is closed
@@ -31,7 +31,7 @@ Provide at least 1 reason, such as:
 
 1. **Open an issue** using the **"Remove: CMS"** template
 2. The issue is automatically labeled `remove: cms` and `status: proposed`
-3. The community votes with 👍/👎 over a 7-day window
+3. The community votes with 👍/👎 over a 30-day window
 4. A maintainer updates the label to `status: accepted` or `status: rejected`
 5. If accepted, open a PR that removes the entry from **`Content Management Systems.toml`** at the repo root
 6. Once the PR is merged, the issue is closed

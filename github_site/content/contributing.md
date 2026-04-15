@@ -7,7 +7,7 @@ All changes to the directory go through a community review process: a proposal (
 ## How it works
 
 1. **Open an issue** using the appropriate template
-2. **The community votes** using 👍/👎 reactions (7-day window)
+2. **The community votes** using 👍/👎 reactions (30-day window)
 3. **A maintainer** updates the status label to `status: accepted` or `status: rejected`
 4. **If accepted**, open a PR to edit the correct TOML file
 5. **Once the PR is merged**, the issue is closed

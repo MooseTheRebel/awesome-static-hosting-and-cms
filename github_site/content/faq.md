@@ -20,7 +20,7 @@ A: Open a GitHub issue using the appropriate issue template ("Add: Hosting Provi
 A: Open a GitHub issue using the "Remove: Hosting Provider" or "Remove: CMS" template and provide evidence that the entry should be removed. See [Removing from ASHC](removing) for details.
 
 **Q: What happens after I open an issue?**
-A: The community votes using 👍/👎 reactions over a 7-day window. A maintainer then marks the issue as accepted or rejected and updates the label accordingly.
+A: The community votes using 👍/👎 reactions over a 30-day window. A maintainer then marks the issue as accepted or rejected and updates the label accordingly.
 
 **Q: Do I need to open a pull request when I propose an entry?**
 A: Not immediately. Open an issue first. If the proposal is accepted, then open a PR to edit the appropriate TOML file (`Hosting Providers.toml` or `Content Management Systems.toml`).
