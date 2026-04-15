@@ -6,7 +6,7 @@ Proposals to add new entries are tracked as GitHub issues. Each proposal must in
 
 ## Adding a Hosting Provider
 
-Hosting providers are listed at [Hosting Providers](hosting-providers).
+Hosting providers are listed at [Hosting Providers](../hosting-providers/).
 
 ### Process
 
@@ -42,7 +42,7 @@ The `issue` field must be set to the URL of the proposal issue opened in step 1.
 
 ## Adding a CMS
 
-Content Management Systems are listed at [Content Management Systems](cms).
+Content Management Systems are listed at [Content Management Systems](../cms/).
 
 ### Process
 
@@ -77,4 +77,4 @@ The `issue` field must be set to the URL of the proposal issue opened in step 1.
 
 ---
 
-Back to [Contributing](contributing)
+Back to [Contributing](../contributing/)
