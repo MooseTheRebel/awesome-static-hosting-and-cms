@@ -6,7 +6,7 @@ Proposals to add new entries are tracked as GitHub issues. Each proposal must in
 
 ## Adding a Hosting Provider
 
-Hosting providers are listed at [/hosting-providers/](hosting-providers).
+Hosting providers are listed at [Hosting Providers](hosting-providers).
 
 ### Process
 

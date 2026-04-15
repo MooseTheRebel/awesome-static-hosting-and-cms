@@ -30,7 +30,7 @@ body:
       label: Justification (3 bullets required)
       description: |
         You must address all three points:
-        1. **Actively maintained** — link to a recent commit, release, or changelog
+        1. **Actively maintained** — link to a recent commit, release, changelog, blog, or official update        
         2. **Supports static site hosting** — explain how the provider hosts static files
         3. **Meaningfully different** — explain how this differs from existing entries
       placeholder: |
