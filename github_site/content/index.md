@@ -11,3 +11,8 @@ A curated directory of static hosting providers, content management systems, and
 ## About
 
 This directory is maintained by the community. Each entry is backed by a GitHub issue for open discussion and review.
+
+## Get involved
+
+- [Contributing](contributing) — how to propose additions and removals
+- [FAQ](faq) — common questions answered

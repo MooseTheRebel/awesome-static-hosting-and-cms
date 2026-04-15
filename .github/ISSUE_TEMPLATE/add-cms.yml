@@ -1,0 +1,50 @@
+name: "Add: CMS"
+description: Propose a new content management system to add to ASHC
+labels: ["add: cms", "status: proposed"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name of the CMS
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: Source Code URL
+      description: Link to the source repository.
+    validations:
+      required: true      
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description (1-2 sentences)
+      description: Describe the CMS and how it integrates with static site generators.
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification (4 bullets required)
+      description: |
+        You must address all four points:
+        1. **Open source** — link to the source code (e.g., GitHub, GitLab, Forgejo, Codeberg, sourcehut)
+        2. **Actively maintained** — link to a recent commit, release, or changelog
+        3. **Works with static site generators** — explain the integration
+        4. **Meaningfully different** — explain how this differs from existing entries
+      placeholder: |
+        1. Open source: ...
+        2. Actively maintained: ...
+        3. Works with static site generators: ...
+        4. Meaningfully different from existing entries: ...
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Suggested tags (comma-separated)
+      placeholder: "git-based, open-source, headless, api-based"
