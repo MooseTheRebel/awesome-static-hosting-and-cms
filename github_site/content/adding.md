@@ -42,7 +42,7 @@ The `issue` field must be set to the URL of the proposal issue opened in step 1.
 
 ## Adding a CMS
 
-Content Management Systems are listed at [/cms/](cms).
+Content Management Systems are listed at [Content Management Systems](cms).
 
 ### Process
 
