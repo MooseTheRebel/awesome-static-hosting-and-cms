@@ -39,20 +39,20 @@ def get_name(entry: str) -> str:
 
 def sort_file(path: Path, marker: str) -> bool:
     """Return True if the file was already sorted, False if it changed (or would change)."""
-    text = path.read_text()
+    text = path.read_text(encoding="utf-8")
     trailing = "\n" if text.endswith("\n") else ""
     header, entries = split_entries(text.rstrip(), marker)
     sorted_entries = sorted(entries, key=get_name)
     if entries == sorted_entries:
         return True
     new_text = header + "\n\n".join(sorted_entries) + trailing
-    path.write_text(new_text)
+    path.write_text(new_text, encoding="utf-8")
     return False
 
 
 def check_file(path: Path, marker: str) -> bool:
     """Return True if sorted, False if not."""
-    text = path.read_text()
+    text = path.read_text(encoding="utf-8")
     _, entries = split_entries(text.rstrip(), marker)
     return entries == sorted(entries, key=get_name)
 
