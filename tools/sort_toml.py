@@ -1,60 +1,64 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["tomlkit"]
+# ///
 """Sort `[[providers]]` and `[[systems]]` entries by `name` (case-insensitive).
 
-Run with `--check` to fail (exit 1) when entries are out of order without
-rewriting; run without arguments to sort the files in place. Closes #61.
+Uses tomlkit so comments, blank-line separators between entries, and inline
+field order are all preserved across a sort. Run with `--check` to fail
+(exit 1) when entries are out of order without rewriting; run without
+arguments to sort the files in place. Closes #61.
 """
 
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 from pathlib import Path
+
+import tomlkit
+from tomlkit.items import AoT
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 FILES = [
-    ("Hosting Providers.toml", "[[providers]]"),
-    ("Content Management Systems.toml", "[[systems]]"),
+    ("Hosting Providers.toml", "providers"),
+    ("Content Management Systems.toml", "systems"),
 ]
 
 
-def split_entries(text: str, marker: str) -> tuple[str, list[str]]:
-    """Split a TOML file into (header, [entry, ...]) where each entry begins with `marker`."""
-    idx = text.find(marker)
-    if idx == -1:
-        return text, []
-    header = text[:idx]
-    body = text[idx:]
-    parts = body.split(marker)
-    entries = [(marker + p).rstrip() for p in parts[1:] if p.strip()]
-    return header, entries
+def _name(table) -> str:
+    return str(table.get("name", "")).lower()
 
 
-def get_name(entry: str) -> str:
-    match = re.search(r'name\s*=\s*"([^"]+)"', entry)
-    return match.group(1).lower() if match else ""
+def _names_in_order(path: Path, aot_key: str) -> list[str]:
+    doc = tomlkit.parse(path.read_text(encoding="utf-8"))
+    aot = doc.get(aot_key)
+    if not isinstance(aot, AoT):
+        return []
+    return [_name(t) for t in aot]
 
 
-def sort_file(path: Path, marker: str) -> bool:
-    """Return True if the file was already sorted, False if it changed (or would change)."""
+def _is_sorted(names: list[str]) -> bool:
+    return names == sorted(names)
+
+
+def sort_file(path: Path, aot_key: str) -> bool:
+    """Return True if already sorted, False if the file was rewritten."""
     text = path.read_text(encoding="utf-8")
-    trailing = "\n" if text.endswith("\n") else ""
-    header, entries = split_entries(text.rstrip(), marker)
-    sorted_entries = sorted(entries, key=get_name)
-    if entries == sorted_entries:
+    doc = tomlkit.parse(text)
+    aot = doc.get(aot_key)
+    if not isinstance(aot, AoT) or len(aot) < 2:
         return True
-    new_text = header + "\n\n".join(sorted_entries) + trailing
-    path.write_text(new_text, encoding="utf-8")
+
+    if _is_sorted([_name(t) for t in aot]):
+        return True
+
+    sorted_tables = sorted(aot, key=_name)
+    doc[aot_key] = AoT(sorted_tables, parsed=True)
+    path.write_text(tomlkit.dumps(doc), encoding="utf-8")
     return False
-
-
-def check_file(path: Path, marker: str) -> bool:
-    """Return True if sorted, False if not."""
-    text = path.read_text(encoding="utf-8")
-    _, entries = split_entries(text.rstrip(), marker)
-    return entries == sorted(entries, key=get_name)
 
 
 def main() -> int:
@@ -67,16 +71,16 @@ def main() -> int:
     args = parser.parse_args()
 
     unsorted: list[str] = []
-    for filename, marker in FILES:
+    for filename, aot_key in FILES:
         path = REPO_ROOT / filename
         if not path.exists():
             print(f"warning: {filename} not found", file=sys.stderr)
             continue
         if args.check:
-            if not check_file(path, marker):
+            if not _is_sorted(_names_in_order(path, aot_key)):
                 unsorted.append(filename)
         else:
-            already = sort_file(path, marker)
+            already = sort_file(path, aot_key)
             print(f"{filename}: {'already sorted' if already else 'sorted in place'}")
 
     if args.check and unsorted:

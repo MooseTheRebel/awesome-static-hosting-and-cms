@@ -31,9 +31,10 @@ bootstrap:
     just install
 
 # Sort `[[providers]]` and `[[systems]]` entries by name
+# Dependencies declared via PEP 723 inline script metadata in tools/sort_toml.py.
 sort-toml:
-    uv run python tools/sort_toml.py
+    uv run tools/sort_toml.py
 
 # Verify TOML entries are sorted (CI-friendly; exit 1 if not)
 check-toml:
-    uv run python tools/sort_toml.py --check
+    uv run tools/sort_toml.py --check
