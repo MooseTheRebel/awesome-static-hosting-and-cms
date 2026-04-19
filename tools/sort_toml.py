@@ -5,10 +5,10 @@
 # ///
 """Sort `[[providers]]` and `[[systems]]` entries by `name` (case-insensitive).
 
-Uses tomlkit so comments, blank-line separators between entries, and inline
+Uses tomlkit so that comments, blank-line separators between entries, and inline
 field order are all preserved across a sort. Run with `--check` to fail
 (exit 1) when entries are out of order without rewriting; run without
-arguments to sort the files in place. Closes #61.
+arguments to sort the files in place.
 """
 
 from __future__ import annotations
