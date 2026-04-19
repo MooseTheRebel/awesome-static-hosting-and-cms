@@ -17,6 +17,13 @@ tags = ["javascript", "headless", "hosted", "api-based"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/33"
 
 [[systems]]
+name = "Decap CMS"
+source_url = "https://github.com/decaporg/decap-cms"
+description = "Open source git-based CMS for static site generators. Works with any static site generator."
+tags = ["javascript", "git-based", "open-source", "blogging"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/39"
+
+[[systems]]
 name = "Forestry"
 source_url = ""
 description = "Git-based CMS for Jekyll and Hugo sites. Host anywhere and access your CMS from /admin/."
@@ -50,13 +57,6 @@ source_url = "https://github.com/jekyll/jekyll-admin"
 description = "A Jekyll plugin providing a traditional CMS-style graphical interface to author content."
 tags = ["ruby", "blogging", "open-source", "git-based"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/38"
-
-[[systems]]
-name = "Decap CMS"
-source_url = "https://github.com/decaporg/decap-cms"
-description = "Open source git-based CMS for static site generators. Works with any static site generator."
-tags = ["javascript", "git-based", "open-source", "blogging"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/39"
 
 [[systems]]
 name = "Prose"
