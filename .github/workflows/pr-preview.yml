@@ -21,6 +21,9 @@ jobs:
         run: uv sync
         working-directory: github_site
 
+      - name: Ensure TOML is sorted
+        run: uv run tools/sort_toml.py --check
+
       - name: Build directory data
         run: uv run python app.py build_directory
         working-directory: github_site
