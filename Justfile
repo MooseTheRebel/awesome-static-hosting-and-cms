@@ -30,7 +30,7 @@ bootstrap:
     fi
     just install
 
-# Preview a PR locally using a git worktree (requires gh CLI).
+# Preview a PR locally using a git worktree.
 # Usage: just preview-pr <PR_number> [no-serve=1] [keep-dir=1]
 #   no-serve=1  — build only, skip launching the dev server
 #   keep-dir=1  — keep the worktree directory after exit (default: clean up)

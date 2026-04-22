@@ -20,7 +20,7 @@ All changes to the directory go through a community review process: a proposal (
 ## Previewing a PR locally
 
 Maintainers and contributors can preview any open PR's generated site without leaving their machine.
-Requires [just](https://just.systems/) and the [gh CLI](https://cli.github.com/) installed and authenticated.
+Requires [just](https://just.systems/), [git](https://git-scm.com/), and [uv](https://docs.astral.sh/uv/) installed.
 
 ```
 just preview-pr <PR_number>
