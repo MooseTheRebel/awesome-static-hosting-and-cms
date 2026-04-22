@@ -37,9 +37,15 @@ bootstrap:
 preview-pr pr_number no_serve='' keep_dir='':
     #!/usr/bin/env bash
     set -euo pipefail
-    worktree_path="/tmp/ashc-preview-{{pr_number}}"
+
+    PR_NUM='{{pr_number}}'
+    NO_SERVE='{{no_serve}}'
+    KEEP_DIR='{{keep_dir}}'
+
+    worktree_path="/tmp/ashc-preview-${USER:-shared}-$PR_NUM"
+
     cleanup() {
-        if [ -z "{{keep_dir}}" ]; then
+        if [ -z "$KEEP_DIR" ]; then
             echo "Cleaning up worktree at $worktree_path..."
             git worktree remove --force "$worktree_path" 2>/dev/null || true
         else
@@ -47,11 +53,18 @@ preview-pr pr_number no_serve='' keep_dir='':
         fi
     }
     trap cleanup EXIT
+
+    if [ -d "$worktree_path" ]; then
+        echo "Error: Worktree directory $worktree_path already exists."
+        echo "Run 'git worktree remove --force $worktree_path' to clean up."
+        exit 1
+    fi
+
     main_root="$(git rev-parse --show-toplevel)"
     echo "Creating worktree at $worktree_path..."
-    git worktree add "$worktree_path" HEAD
+    git worktree add --detach "$worktree_path" HEAD
     cd "$worktree_path"
-    git fetch origin pull/{{pr_number}}/head
+    git fetch origin "pull/$PR_NUM/head"
     git checkout FETCH_HEAD
     # Copy .env into the worktree, falling back to .env.example
     if [ -f "$main_root/github_site/.env" ]; then
@@ -63,7 +76,7 @@ preview-pr pr_number no_serve='' keep_dir='':
     cd "$worktree_path/github_site"
     uv sync
     uv run --env-file .env python app.py build_directory
-    if [ -z "{{no_serve}}" ]; then
+    if [ -z "$NO_SERVE" ]; then
         uv run --env-file .env coltrane play
     else
         uv run --env-file .env coltrane record
