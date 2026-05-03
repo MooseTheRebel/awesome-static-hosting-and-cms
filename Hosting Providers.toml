@@ -81,7 +81,7 @@ issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/
 
 [[providers]]
 name = "Zoho Catalyst Slate"
-url = "https://catalyst.zoho.com/slate/index.html?src=header"
+url = "https://catalyst.zoho.com/slate/"
 description = "Free tier static hosting instantly from your Github repos(not limited to) with automatic scaling and with integrated databases, authentication, serverless functions, and event handling"
 tags = ["big tech", "cdn", "free", "global", "hosting"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/63"
