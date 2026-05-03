@@ -20,14 +20,14 @@ issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/
 name = "AWS S3"
 url = "https://aws.amazon.com/s3/"
 description = "Object storage from Amazon Web Services widely used for static site hosting with CloudFront CDN."
-tags = ["public company", "global"]
+tags = ["big tech", "public company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/53"
 
 [[providers]]
 name = "Azure Static Web Apps"
 url = "https://azure.microsoft.com/en-us/products/app-service/static"
 description = "Free tier static hosting from Microsoft Azure with global CDN and GitHub Actions integration."
-tags = ["free", "public company", "global"]
+tags = ["big tech", "free", "public company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/49"
 
 [[providers]]
@@ -55,14 +55,14 @@ issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/
 name = "GitHub Pages"
 url = "https://pages.github.com"
 description = "Free static site hosting directly from a GitHub repository. Supports custom domains and HTTPS."
-tags = ["free", "public company", "global"]
+tags = ["big tech", "free", "public company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/44"
 
 [[providers]]
 name = "GitLab Pages"
 url = "https://docs.gitlab.com/ee/user/project/pages/"
 description = "Free static hosting built into GitLab, with CI/CD integration and custom domain support."
-tags = ["free", "public company", "global"]
+tags = ["big tech", "free", "public company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/45"
 
 [[providers]]
@@ -76,5 +76,12 @@ issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/
 name = "Netlify"
 url = "https://www.netlify.com"
 description = "Free tier static hosting with CDN, continuous deployment, form handling, and serverless functions."
-tags = ["free", "private company", "global"]
+tags = ["big tech", "free", "private company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/47"
+
+[[providers]]
+name = "Zoho Catalyst Slate"
+url = "https://catalyst.zoho.com/slate/"
+description = "Free tier static hosting instantly from your GitHub repositories (not limited to) with automatic scaling and integrated databases, authentication, serverless functions, and event handling."
+tags = ["big tech", "free", "private company", "global"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/63"
