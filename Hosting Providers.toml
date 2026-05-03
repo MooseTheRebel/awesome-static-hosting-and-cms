@@ -78,3 +78,10 @@ url = "https://www.netlify.com"
 description = "Free tier static hosting with CDN, continuous deployment, form handling, and serverless functions."
 tags = ["free", "private company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/47"
+
+[[providers]]
+name = "Zoho Catalyst Slate"
+url = "https://catalyst.zoho.com/slate/index.html?src=header"
+description = "Free tier static hosting instantly from your Github repos(not limited to) with automatic scaling and with integrated databases, authentication, serverless functions, and event handling"
+tags = ["big tech", "cdn", "free", "global", "hosting"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/63"
