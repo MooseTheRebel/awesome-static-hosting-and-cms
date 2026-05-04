@@ -24,13 +24,6 @@ tags = ["javascript", "git-based", "open-source", "blogging"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/39"
 
 [[systems]]
-name = "Forestry"
-source_url = ""
-description = "Git-based CMS for Jekyll and Hugo sites. Host anywhere and access your CMS from /admin/."
-tags = ["git-based", "blogging", "hosted"]
-issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/34"
-
-[[systems]]
 name = "Grav"
 source_url = "https://github.com/getgrav/grav"
 description = "Modern, fast flat-file CMS built on PHP. No database required."
@@ -78,3 +71,10 @@ source_url = ""
 description = "Hosted CMS for static sites over FTP or Amazon S3. Edit HTML pages in-browser."
 tags = ["hosted", "blogging"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/43"
+
+[[systems]]
+name = "Tina CMS"
+source_url = "https://github.com/tinacms/tinacms"
+description = "A fully open-source headless CMS that supports Markdown and Visual Editing."
+tags = ["blogging", "git-based", "hosted", "open-source", "self-hosted"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/34"
