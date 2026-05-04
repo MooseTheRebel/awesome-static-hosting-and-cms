@@ -75,6 +75,6 @@ issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/
 [[systems]]
 name = "Tina CMS"
 source_url = "https://github.com/tinacms/tinacms"
-description = " A fully open-source headless CMS that supports Markdown and Visual Editing."
+description = "A fully open-source headless CMS that supports Markdown and Visual Editing."
 tags = ["blogging", "git-based", "hosted", "open-source", "self-hosted"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/34"
