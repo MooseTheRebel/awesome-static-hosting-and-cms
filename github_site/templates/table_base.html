@@ -1,0 +1,43 @@
+{% extends "coltrane/base.html" %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+
+{% block table_content %}{% endblock table_content %}
+
+<script type="module">
+  import { DataTable } from "https://cdn.jsdelivr.net/npm/simple-datatables@latest/+esm"
+  document.querySelectorAll(".data-table").forEach((table) => {
+    new DataTable(table, {
+      perPageSelect: [10, 50, ["All", -1]],
+      tableRender: (_data, tableElement, type) => {
+        if (type === "print") {
+          return tableElement
+        }
+        const tHead = tableElement.childNodes[0]
+        const filterHeaders = {
+          nodeName: "TR",
+          childNodes: tHead.childNodes[0].childNodes.map(
+            (_th, colIndex) => ({
+              nodeName: "TH",
+              childNodes: [
+                {
+                  nodeName: "INPUT",
+                  attributes: {
+                    class: "datatable-input",
+                    type: "search",
+                    placeholder: "Search...",
+                    "data-columns": `[${colIndex}]`
+                  }
+                }
+              ]
+            })
+          )
+        }
+        tHead.childNodes.push(filterHeaders)
+        return tableElement
+      }
+    })
+  })
+</script>
+{% endblock content %}
