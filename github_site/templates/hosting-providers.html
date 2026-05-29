@@ -1,11 +1,11 @@
-{% extends "coltrane/base.html" %}
+{% extends "table_base.html" %}
 
-{% block content %}
+{% block table_content %}
 <h1>Static Hosting Providers</h1>
 <p>A curated directory of static site hosting providers.
    Each entry links to a GitHub issue in this repository for community discussion.</p>
 
-<table>
+<table class="data-table">
   <thead>
     <tr>
       <th>Name</th>
@@ -35,4 +35,4 @@
     {% endfor %}
   </tbody>
 </table>
-{% endblock content %}
+{% endblock table_content %}
