@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore: " # satisfy conventional commit format
+
+  - package-ecosystem: pip
+    directory: /github_site
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore: " # satisfy conventional commit format
