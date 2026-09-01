@@ -10,6 +10,13 @@
 #   issue       - URL to the GitHub issue in this repo for discussion
 
 [[systems]]
+name = "b10cks CMS"
+source_url = "https://github.com/b10cks/cms"
+description = "Open source headless CMS with block-based content modeling, visual editing and real-time collaboration. Built on Laravel and Vue, self-hostable with Docker."
+tags = ["php", "headless", "api-based", "open-source", "self-hosted"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/80"
+
+[[systems]]
 name = "DatoCMS"
 source_url = "https://github.com/datocms"
 description = "Headless CMS for static site generators with a GraphQL API and media management."
