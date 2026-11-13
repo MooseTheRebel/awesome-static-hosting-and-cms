@@ -80,6 +80,13 @@ tags = ["big tech", "free", "private company", "global"]
 issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/47"
 
 [[providers]]
+name = "Spaicely"
+url = "https://spaicely.com/en-gb/"
+description = "Paid static site hosting in the EU on your own domain, built so an AI assistant (Claude, ChatGPT, Gemini, Claude Code) can register the domain, upload and publish the site over MCP; also a dashboard and CLI, with forms, shop and mail."
+tags = ["european union", "small tech", "private company"]
+issue = "https://github.com/MooseTheRebel/awesome-static-hosting-and-cms/issues/84"
+
+[[providers]]
 name = "Zoho Catalyst Slate"
 url = "https://catalyst.zoho.com/slate/"
 description = "Free tier static hosting instantly from your GitHub repositories (not limited to) with automatic scaling and integrated databases, authentication, serverless functions, and event handling."
